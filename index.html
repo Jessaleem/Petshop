@@ -20,13 +20,21 @@
   <body>
     <header>
       <div class="anuncio">
-        <span>Grandes ofertas en comederos</span>
-        <span>Español</span>
-        <span>ARG$</span>
+        <p>Grandes ofertas en comederos</p>
+        <div class="info">
+          <p>
+            <span lass="language">Español</span>
+            <i class="fas fa-angle-down"></i>
+          </p>
+          <p>
+            <span>ARG$</span>
+            <i class="fas fa-angle-down"></i>
+          </p>
+        </div>
       </div>
       <nav class="menu">
         <img src="./img/logo.png" alt="logo" />
-        <ul>
+        <ul class="pet-nav">
           <li type="none">
             <i class="fas fa-paw">Categorías</i>
           </li>
@@ -43,87 +51,114 @@
       </nav>
     </header>
     <main>
-      <section>
-        <p class="titulo-imagen">¡Es un placer tenerte aquí!</p>
+      <section class="banner">
         <div class="banner-img">
+          <p class="titulo-imagen">¡Es un placer tenerte aquí!</p>
           <p>¡Comederos en descuento!</p>
           <span class="comederos">COMEDEROS</span>
         </div>
       </section>
-      <section>
-        <img src="./img/pawprint 1.png" alt="huellita" />
-        <h1>Productos Destacados</h1>
-        <div>
-          <a>Comederos</a>
-          <a>Accesorios</a>
-          <a>Comida</a>
+      <section class="title-main-section">
+        <div class="main-section-text">
+          <img src="./img/pawprint 1.png" alt="huellita" />
+          <h1>Productos Destacados</h1>
+          <div class="nav-main">
+            <a>Comederos -</a>
+            <a> Accesorios -</a>
+            <a> Comida</a>
+          </div>
         </div>
-        <article>
-          <img src="./img/churrasquito.png" alt="Churrasquito" />
-          <p class="descripcion">Juguete Churrasquito</p>
-          <p class="precio">$150</p>
-        </article>
-        <article>
-          <img src="./img/comedero.png" alt="Comedero" />
-          <p class="descripcion">Comedero para perro</p>
-          <p class="precio">$250</p>
-        </article>
-        <article>
-          <img src="./img/Huesito.png" alt="Huesito" />
-          <p class="descripcion">Juguete Huesito</p>
-          <p class="precio">$650</p>
-        </article>
+        <section class="cards-section">
+          <article>
+            <img src="./img/churrasquito.png" alt="Churrasquito" />
+            <p class="descripcion">Juguete Churrasquito</p>
+            <p class="precio">$150</p>
+          </article>
+          <article>
+            <img src="./img/comedero.png" alt="Comedero" />
+            <p class="descripcion">Comedero para perro</p>
+            <p class="precio">$250</p>
+          </article>
+          <article>
+            <img src="./img/Huesito.png" alt="Huesito" />
+            <p class="descripcion">Juguete Huesito</p>
+            <p class="precio">$650</p>
+          </article>
+        </section>
       </section>
-      <form>
-        <h2>Contactanos</h2>
+      <form class="form">
+        <h2 class="form-title">Contáctanos</h2>
         <input
+          class="input"
           type="text"
           name="nombre"
           placeholder="Nombre y apellido"
           required
         /><br />
         <input
+          class="input"
           type="email"
           name="email"
           placeholder="Ingresa tu correo electrónico"
           required
         /><br />
         <input
+          class="input"
           type="tel"
           name="telefono"
           placeholder="Teléfono"
           required
         /><br />
-        <input type="reset" value="Resetear" />
-        <input type="submit" value="Enviar" />
+        <div class="form-buttons">
+          <button class="form-button1">Resetear</button>
+          <button class="form-button2">Enviar</button>
+        </div>
       </form>
     </main>
     <footer>
       <form class="form-2">
-        <h2>Suscríbete para más novedades</h2>
-        <input
-          type="email"
-          name="email"
-          placeholder="Ingresa tu correo electrónico"
-          required
-        /><br />
-        <input type="submit" value="Suscribirme" />
+        <div class="form-2-title">
+          <img src="./img/mail.png" />
+          <h2 class="form-2-text">Suscríbete para más novedades</h2>
+        </div>
+        <div class="form2-suscribe">
+          <input
+            class="input-suscribe"
+            type="email"
+            name="email"
+            placeholder="Ingresa tu correo electrónico"
+            required
+          />
+          <button class="suscribe-button">Suscribirme</button>
+        </div>
       </form>
       <div class="contacto">
-        <div>
-          <img src="./img/Location.png" alt="Location" />
+        <div class="contact-icons">
+          <div class="icons">
+            <img src="./img/Location-Icon.png" alt="Location" />
+            <div>
+              <p class="contact-title">Localidad</p>
+              <p class="contact-subtitle">Calle - Provincia</p>
+            </div>
+          </div>
+          <div class="icons">
+            <img src="./img/Phone-Icon.png" alt="Location" />
+            <div>
+              <p class="contact-title">Teléfono</p>
+              <p class="contact-subtitle">Número de teléfono</p>
+            </div>
+          </div>
+          <div class="icons">
+            <img src="./img/Phone-Icon.png" alt="Location" />
+            <div>
+              <p class="contact-title">Correo Electrónico</p>
+              <p class="contact-subtitle">Dirección de correo</p>
+            </div>
+          </div>
         </div>
         <div>
-          <img src="./img/Phone.png" alt="Teléfono" />
+          <img src="./img/logo.png" alt="logo" />
         </div>
-        <div>
-          <img src="./img/Correo.png" alt="Correo" />
-        </div>
-        <img
-          src="./img/logo.png"
-          style="height: 40px; width: 120px"
-          alt="Logo"
-        />
       </div>
       <p class="footer-2">Todos los derechos reservados Front End</p>
     </footer>
