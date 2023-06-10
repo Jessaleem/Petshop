@@ -34,12 +34,22 @@ body {
 
 .banner {
   position: relative;
-  width: 100%;
-  height: 400px;
+  height: 30rem;
   background-image: url('../img/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 2rem;
 }
 
 .titulo-imagen {
@@ -47,16 +57,10 @@ body {
   background-color: #ffff;
   font-size: 30px;
   text-align: center;
+  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
 }
-.banner-img {
-  position: absolute;
-  top: 12rem;
-  left: 50rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  align-items: center;
-}
+
 .comederos {
   background-color: #f0a83e;
   padding: 0.9rem 0px;
@@ -87,6 +91,7 @@ h1 {
   row-gap: 1rem;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -96,10 +101,9 @@ h1 {
 
 article {
   background-color: #fbfaf6;
-  width: 50vw;
 
   @media (min-width: 992px) {
-    width: auto;
+    /* width: auto; */
   }
 }
 
@@ -169,8 +173,14 @@ article {
   background-color: #f0a83e;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 10px 20px;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
 
   .form-2-title {
     display: flex;
@@ -210,15 +220,26 @@ article {
 .contacto {
   background-color: #3c2313;
   display: flex;
+  flex-direction: column;
   padding: 2rem 5rem;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .contact-icons {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     color: white;
+    order: 2;
+
+    @media (min-width: 992px) {
+      order: 1;
+    }
 
     .icons {
       display: flex;
@@ -234,6 +255,14 @@ article {
     .contact-subtitle {
       color: #8a8787;
       font-size: 0.8rem;
+    }
+  }
+
+  .footer-logo {
+    order: 1;
+
+    @media (min-width: 992px) {
+      order: 2;
     }
   }
 }
